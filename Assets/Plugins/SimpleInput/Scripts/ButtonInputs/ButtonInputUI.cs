@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 namespace SimpleInputNamespace
 {
@@ -27,8 +28,10 @@ namespace SimpleInputNamespace
 
 		public void OnPointerDown( PointerEventData eventData )
 		{
+            print("lol");
 			button.value = true;
-		}
+            SceneManager.LoadScene("SampleScene");
+        }
 
 		public void OnPointerUp( PointerEventData eventData )
 		{

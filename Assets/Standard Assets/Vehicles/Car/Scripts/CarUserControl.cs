@@ -86,7 +86,7 @@ namespace UnityStandardAssets.Vehicles.Car
 
         void OpenInfo(int index)
         {
-            pointCanvas[0].SetActive(true);
+            pointCanvas[index].SetActive(true);
             isShowing = true;
         }
 
